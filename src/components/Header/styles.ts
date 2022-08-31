@@ -77,3 +77,15 @@ export const HeaderButton = styled.button<HeaderButtonProps>`
       }
     `}
 `;
+
+export const CoffeDeliveryLogo = styled.div`
+  display: flex;
+  align-items: baseline;
+
+  p {
+    position: relative;
+    bottom: 3px;
+    font-size: ${(props) => props.theme.textSizes["title-title-m"]};
+    color: ${(props) => props.theme.colors["brand-purple-dark"]};
+  }
+`;

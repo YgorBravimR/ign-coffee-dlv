@@ -8,12 +8,12 @@ import { DetailsContainer, SelectedCoffessContainer } from "./styles";
 export function SelectedCoffees() {
   const { cartItems } = useCart()
 
-
   return (
     <SelectedCoffessContainer>
       <TitleText size="xs" color="subtitle">
         Cafés selecionados
       </TitleText>
+
       <DetailsContainer>
         {cartItems.map((item) => (
           <CoffeeCartCard key={item.id} coffee={item} />
